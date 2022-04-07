@@ -1,2 +1,2 @@
 # DevInHouse-Modulo1
- Exercícios do Módulo 1 atualizados
+ Repositório de exercícios do Módulo 1 do DevInAudaces atualizados
