@@ -1,0 +1,1 @@
+Escreva uma função chamada 'envolver' que recebe uma quantidade indefinida de tags html (no formato string) como parâmetros, e retorne outro array cujo primeiro elemento é '<html>', seguido das tags recebidas como parâmetro e como último elemento '</html>'.
