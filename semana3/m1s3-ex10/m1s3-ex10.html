@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>Salvando Preferencias do Usuário</title>
+  </head>
+  <body>
+    <main>
+      <div class="container content">
+
+        <div class="color__picker container ">
+          <p class="color__picker--title">Selecione a cor do background</p>
+          <input type="color" class="color__picker--input" value="#000000" />
+        </div>
+
+        <div class="color__timer container">
+          <p class="color__timer--title">
+            Selecione o tempo de duração do background
+          </p>
+          <input type="number" min="1" class="color__timer--input " value= "1"/>
+        </div>
+        <div class="btn">
+          <button id="btn__saveUserPref">Salvar Preferências</button>
+
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+    <div></div>
+  </body>
+</html>

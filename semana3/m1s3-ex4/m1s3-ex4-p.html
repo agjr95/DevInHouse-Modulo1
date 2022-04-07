@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+
+  <title>M1S2-EX4</title>
+</head>
+<body>
+  <header>
+    <nav class=" container header__menu">
+      <a class="header__menu--items" onclick="showHide('galeria')" >Galeria</a>
+      <a class="header__menu--items" onclick="showHide('videos')" >Vídeo</a>
+      <a class="header__menu--items" onclick="showHide('perfil')">Perfil</a>
+      <a href="#"class="header__menu--btn">
+      </a>
+    </nav>
+  </header>
+  <div id="galeria" class="hidden">
+    <section class="containerGaleria ">
+    
+      <img class="imagem" src="./images/teste_03.jpg" alt="">
+      <img class="imagem" src="./images/teste_05.jpg" alt="">
+      <img class="imagem" src="./images/teste_07.jpg" alt="">
+      <img class="imagem" src="./images/teste_12.jpg" alt="">
+      <img class="imagem" src="./images/teste_14.jpg" alt="">
+      <img class="imagem" src="./images/teste_15.jpg" alt="">
+      <img class="imagem" src="./images/teste_19.jpg" alt="">
+      <img class="imagem" src="./images/teste_20.jpg" alt="">
+      <img class="imagem" src="./images/teste_21.jpg" alt="">
+    </section>
+
+  </div>
+  <div id="videos" class="hidden">
+    <iframe class="video" width="90%" height="720px" src="https://www.youtube.com/embed/E6CdIawPTh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div id="perfil" class="hidden">
+    <div class="container perfilzim">
+      <div class="profile">
+        <img class="profile__img" src="./img/perfilzim.jpg">
+        <ul class="profile__info">
+          <h1 class="profile__info--name">Profile Name</h1>
+          <li class="profile__info--items" >245 Mackfriers Road</li>
+          <li class="profile__info--items" >Ludgate House</li>
+          <li class="profile__info--items" >London, SE1 9UY</li>
+          <li class="profile__info--items" >Email: firstname@surname.com</li>
+          <li class="profile__info--items" >Telephone: 0207 955 3705</li>
+        </ul>
+      </div>
+      <nav class="nav">
+        <ul class="nav__lista">
+          <h2 class="nav__lista--title">Categories</h2>
+          <li class="nav__lista--items" > <a href="#"> Lorem ipsum1</a></li>
+          <li class="nav__lista--items" > <a href="#"> Lorem ipsum2</a></li>
+          <li class="nav__lista--items" > <a href="#"> Lorem ipsum3</a></li>
+          <li class="nav__lista--items" > <a href="#"> Lorem ipsum4</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>m1s3-ex9</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      let element;
+      function chartGenerator(labelsDinamicas, dadosDinamicos, Nome) {
+        const data = {
+          labels: labelsDinamicas,
+          datasets: [
+            {
+              label: Nome,
+              backgroundColor: 'rgb(255, 99, 132)',
+              borderColor: 'rgb(255, 99, 132)',
+              data: dadosDinamicos
+            }
+          ]
+        };
+
+        const config = {
+          type: 'line',
+          data: data,
+          options: {}
+        };
+        if (element != null) {
+          element.remove();
+        }
+        element = document.createElement('canvas');
+        const myChart = new Chart(element, config);
+        document.body.appendChild(element);
+      }
+      function refreshNames(nome) {
+        fetch(`https://servicodados.ibge.gov.br/api/v2/censos/nomes/${nome}`)
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (json) {
+            let infoArr = json[0].res;
+            let labelArr = [];
+            let dataArr = [];
+            for (let info of infoArr) {
+              labelArr.push(info.periodo);
+              dataArr.push(info.frequencia);
+            }
+            chartGenerator(labelArr, dataArr, json[0].nome);
+          });
+      }
+      let names = ['Agnaldo', 'Mirza', 'Monique', 'Andressa'];
+      let nameQtd = names.length;
+      let nameReturned = 0;
+      setInterval(function () {
+        refreshNames(names[nameReturned]);
+        nameReturned += 1;
+        if (nameReturned == nameQtd) {
+          nameReturned = 0;
+        }
+      }, 5000);
+    </script>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

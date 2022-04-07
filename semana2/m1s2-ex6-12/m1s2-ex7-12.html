@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // exercicio 7
+var vitorias = 12;
+var derrotas = 2 ;
+var empates =  6;
+var partidas = 12 + 2 + 6;
+var pontos = (vitorias * 3) + (derrotas * 0 ) + ( empates * 1 );
+console.log(`O time Tabajara F.C acumulou ${pontos} pontos após jogar ${partidas} partidas`);
+
+    // exercicio 8
+
+var arr = [ 56, true, 'JS', 67, 99, 12, false, 88];
+console.log( arr[0] );
+console.log( arr[arr.length-1]);
+console.log( arr[2] );
+console.log( typeof(arr[4]));
+
+    // exercicio 9
+
+var notas = [
+  [10, 8.5, 5.5, 9.5],
+  [8.5, 7, 7.5, 6],
+  [8, 9, 10, 7.5],
+  [9, 9.5, 10, 8]
+];
+console.log(notas[2][0]);
+console.log(notas[3][1]);
+
+var somaLinha0 = notas[0][0] + notas[0][1] + notas[0][2] + notas[0][3];
+var somaLinha1 = notas[1][0] + notas[1][1] + notas[1][2] + notas[1][3];
+var somaLinha2 = notas[2][0] + notas[2][1] + notas[2][2] + notas[2][3];
+var somaLinha3 = notas[3][0] + notas[3][1] + notas[3][2] + notas[3][3];
+console.log(somaLinha0, somaLinha1, somaLinha2, somaLinha3);
+
+//exercicio 10
+var extrato = [100, -35, -15, -5, 55, -20];
+// a
+
+// for(var i=0;i<=extrato.length;i++){
+//   console.log(extrato[i]);
+// }
+
+// b
+
+// for(var i = extrato.length-1;i>=0;i--){
+//   console.log(extrato[i]);
+// }
+
+//c
+// var saldo = '';
+// for(var i=0;i<=extrato.length;i++){
+//   saldo += extrato[i];
+//   console.log(saldo);
+// }
+
+// d
+
+// if(saldo>0){
+//   console.log('saldo positivo')
+// }else{
+//   console.log('saldo negativo')
+// }
+
+
+//exercicio 11
+// var sorteados = [
+//   [ 1, 44, 6, 2, 45, 60],
+//   [10, 21, 55, 25, 34, 44],
+//   [ 8, 18, 28, 29, 55, 59],
+//   [60, 25, 11, 34, 6, 9],
+//   [55, 43, 25, 12, 7, 11]
+// ];
+// var contador = 0;
+// for(var i=0; i< sorteados.length; i++){
+//     var numeros = sorteados[i];
+//     for( var j=0;j< numeros.length; j++){
+//       if(numeros[j] === 25){
+//         contador++
+//       }
+//     }
+// }
+// console.log(contador);
+
+//exercicio 12
+var arr = [12, 67, 23, 32];
+//a
+for(var i = 0; i < arr.length; i++){
+  console.log(arr[i]);
+}
+
+//b
+
+
+//c
+for(var numero of arr){
+  console.log(numero)
+}
+
+//d
+var i =0;
+while(i<arr.length){
+  console.log(arr[i]);
+  i++;
+}
+
+
+  </script>
+</body>
+</html>

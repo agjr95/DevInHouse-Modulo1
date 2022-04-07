@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>m1s3-ex1</title>
+  <style>
+    div{
+      font-size: 60px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div>Conversor de temperatura</div>
+    <form>
+      <div>
+        <input class="celsius" type="text" placeholder="celsius aqui">
+        <input class="farenheit" type="text" placeholder="farenheit aqui">
+        <input class="submit" type="submit" value="calcular">
+      </div>
+
+    </form>
+  </main>
+
+  
+  <script>
+    function converterCparaF (celsius){
+      let c = celsius;
+      let cPraF = c * 9/5 + 32;
+      console.log (cPraF.toFixed(2) + ' F')
+    }
+    
+    function converterFparaC(farenheit){
+      let f = farenheit;
+      let fPraC = (f - 32) * 5/9;
+      console.log(fPraC.toFixed(2) + ' C');
+    }
+    
+    const botaoEnviarC = document.querySelector('.submit');
+    botaoEnviarC.addEventListener('click', function(event){
+      event.preventDefault();
+      
+      let celsiusValor = document.querySelector('.celsius');
+      let celsius = celsiusValor.value;
+
+      let farenheitValor = document.querySelector('.farenheit');
+      let farenheit = farenheitValor.value;
+      converterCparaF(celsius);
+      converterFparaC(farenheit);
+      
+    });
+    
+
+  </script>
+</body>
+</html>
