@@ -41,6 +41,9 @@ body {
   outline: none;
   background-color: #13678a;
 }
+input:out-of-range{
+  border-bottom: 3px solid red;
+}
 .container__h2{
   width: 200px;
   background-color: #45c4b0;
