@@ -18,7 +18,11 @@ const aprovacaoValor = aprovarValorSolicitado(cliente, 300.0);
 
 Promise.all([aprovarDadosCadastrais, aprovarValorSolicitado])
   .then(console.log('DADOS CADASTRAIS APROVADOS'))
-  .catch(console.log(`O VALOR SOLICITADO FOI REPROVADO.`))
-  .finally(console.log('PROCESSO FINALIZADO'));
+  .catch(error => {
+    console.log(`O VALOR SOLICITADO FOI REPROVADO.`);
+  })
+  .finally(() => {
+    console.log('PROCESSO FINALIZADO');
+  });
 
 // continue com o tratamento dos resultados de ambas as promises...
