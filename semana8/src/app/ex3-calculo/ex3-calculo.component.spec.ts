@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BuscaEx2Component } from './busca-ex2.component';
+import { Ex3CalculoComponent } from './ex3-calculo.component';
 
-describe('BuscaEx2Component', () => {
-  let component: BuscaEx2Component;
-  let fixture: ComponentFixture<BuscaEx2Component>;
+describe('Ex3CalculoComponent', () => {
+  let component: Ex3CalculoComponent;
+  let fixture: ComponentFixture<Ex3CalculoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BuscaEx2Component ]
+      declarations: [ Ex3CalculoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BuscaEx2Component);
+    fixture = TestBed.createComponent(Ex3CalculoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
