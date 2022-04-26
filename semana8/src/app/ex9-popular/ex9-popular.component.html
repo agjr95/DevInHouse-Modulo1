@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="movie__info">
+    <h1 class="movie__info--title">{{ first.title }}</h1>
+
+    <p class="movie__info--overview">
+      {{ first.overview }}
+    </p>
+    <section>
+      <div>
+        <span class="movie__info--rating">Rating:</span>
+        <span> {{ first.vote_average }} IMDB</span>
+      </div>
+      <div>
+        <span class="movie__info--voteCount"> Votes Counted: </span>
+        <span> {{ first.vote_count }}</span>
+      </div>
+    </section>
+  </div>
+  <img
+    class="movie__info--img"
+    [src]="'https://image.tmdb.org/t/p/w500' + first.backdrop_path"
+    alt=""
+  />
+</div>

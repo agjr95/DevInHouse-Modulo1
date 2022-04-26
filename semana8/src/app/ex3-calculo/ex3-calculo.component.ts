@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ex3-calculo.component.scss']
 })
 export class Ex3CalculoComponent implements OnInit {
-  input1 = 0
-  input2 = 0 
-  calculo = 0
+  v1 = 0
+  v2 = 0 
+  resultado:string = ''
  
   
    constructor() {
@@ -18,13 +18,13 @@ export class Ex3CalculoComponent implements OnInit {
    ngOnInit(): void {
    }
    calcular(){
-     this.calculo = this.input1 + this.input2
-    
+     const calculo = this.v1 + this.v2
+     this.resultado = 'Resultado: '+ calculo
    }
    limpar(){
-     this.input1 = 0
-     this.input2 = 0
-     
+     this.v1 = 0
+     this.v2 = 0
+     this.resultado = ''
      
    }
 }

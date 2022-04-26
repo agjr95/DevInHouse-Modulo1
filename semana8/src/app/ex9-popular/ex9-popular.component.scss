@@ -1,0 +1,38 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie__info{
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  width: 30%;
+  height: 281px;
+  margin:3rem;
+  justify-content: space-between;
+}
+.movie__info--title{
+  margin-bottom: 1rem;
+  font-weight: 500;
+  
+}
+.movie__info--overview{
+  
+  text-align: justify;
+}
+section{
+  margin-top: 2rem;
+  div{
+    display: flex;
+    column-gap: 1rem;
+  }
+}
+.movie__info--rating{
+font-weight: 300;
+margin-bottom: 0.5rem;
+}
+.movie__info--voteCount{
+font-weight: 300;
+}

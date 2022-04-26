@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-ex4-form',
@@ -7,10 +7,19 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./ex4-form.component.scss']
 })
 export class Ex4FormComponent implements OnInit {
+  _data: FormGroup = this._formBuilder.group({
+    nome: [''],
+    email:[''],
+    nomeFilme:[''],
+    avaliacao:[]
+  })
 
-  constructor() { }
+  constructor(private _formBuilder:FormBuilder) { }
 
   ngOnInit(): void {
   }
-
+  enviar(){
+    console.log(this._data.value)
+    alert('Formulário enviado')
+  }
 }

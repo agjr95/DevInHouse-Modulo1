@@ -1,0 +1,34 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie__info{
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  width: 33%;
+  padding: 2rem;
+}
+.movie__info--title{
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.movie__info--genres{
+  display: flex;
+  column-gap: 2rem;
+  list-style: none;
+  margin-bottom: 2rem;
+  font-weight: 300;
+
+}
+.movie__info--overview{
+  
+  text-align: justify;
+}
+a{
+  text-decoration: none;
+  color: #E50914;
+  margin-left: 1rem;
+}

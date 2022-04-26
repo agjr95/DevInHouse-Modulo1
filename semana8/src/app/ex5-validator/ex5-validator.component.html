@@ -1,4 +1,5 @@
 <div>
+  <h1>Digite o formulário</h1>
   <form [formGroup]="_data" (ngSubmit)="enviar()">
     <input type="string" placeholder="Nome" formControlName="nome" />
     <input type="string" placeholder="Email" formControlName="email" />
@@ -7,7 +8,9 @@
       placeholder="Nome do filme"
       formControlName="nomeFilme"
     />
-    <select name="avalie" formControlName="avaliacao">
+    <span>Dê a sua nota</span>
+    <select formControlName="avaliacao">
+      <option selected disabled>Nota</option>
       <option>0</option>
       <option>1</option>
       <option>2</option>
@@ -24,13 +27,3 @@
     <button type="submit">Enviar</button>
   </form>
 </div>
-<!-- 
-Construa um formulário com os seguintes campos, utilizando [formBuilder]:
-
-nome: string
-email: string
-nomeFilme: string
-avaliacao: int (1 a 10)
-
-Adicione um botão de enviar e cancelar como acionadores do formulário.
-Ao clicar em "Enviar", gere uma mensagem com Você avaliou o filme ${nomeFilme} -->

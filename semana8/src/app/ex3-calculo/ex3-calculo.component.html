@@ -1,10 +1,12 @@
-<div>
-  <form>
-    <label>informe os valores a serem calculados</label>
-    <input type="number" [(ngModel)]="input1" />
-    <input type="number" [(ngModel)]="input2" />
-    <button (click)="calcular()">Calcular</button>
-    <button (click)="limpar()">Limpar</button>
-    <span>{{ calculo }}</span>
-  </form>
+<div class="div1">
+  <div class="div2">
+    <h1>Informe os valores a serem calculados</h1>
+    <div class="div3">
+      <input type="number" [(ngModel)]="v1" />
+      <input type="number" [(ngModel)]="v2" />
+      <button (click)="calcular()">Calcular</button>
+      <button (click)="limpar()">Limpar</button>
+      <span>{{ resultado }}</span>
+    </div>
+  </div>
 </div>
