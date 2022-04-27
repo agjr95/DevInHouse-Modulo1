@@ -1,0 +1,76 @@
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.movie__info{
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  width: 30%;
+  height: 281px;
+  margin: 0 3rem;
+  justify-content: space-between;
+}
+.movie__info--title{
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 3rem;
+  
+}
+.movie__info--overview{
+  font-size: 1.2rem;
+  text-align:justify ;
+  
+}
+section{
+  margin-top: 2rem;
+  
+  div{
+    display: flex;
+    column-gap: 1rem;
+  }
+}
+.movie__info--rating{
+font-weight: 300;
+margin-bottom: 0.5rem;
+}
+.movie__info--voteCount{
+font-weight: 300;
+}
+.btns{
+  display: flex;
+  
+}
+button{
+  cursor: pointer;
+  width: 4rem;
+  margin: 0 2rem;
+  height: 300px;
+ 
+  
+}
+.prevBtn{
+  background-color: #f1f1f1;
+  mask-image: url(../../assets/images/angle-left-solid.svg);
+  mask-repeat: no-repeat ;
+  mask-size: 2rem;
+  mask-position: center;
+  transition: ease-in-out 100ms;
+}
+.nextBtn{
+  background-color: #f1f1f1;
+  mask-image: url(../../assets/images/angle-right-solid.svg);
+  mask-repeat: no-repeat ;
+  mask-size: 2rem;
+  mask-position: center;
+  transition: ease-in-out 100ms;
+}
+.nextBtn:hover,.prevBtn:hover{
+  transform: scale(1.2);
+  
+}
+
+

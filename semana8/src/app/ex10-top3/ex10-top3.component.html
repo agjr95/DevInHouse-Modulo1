@@ -1,0 +1,25 @@
+<div class="container">
+  <button class="prevBtn" (click)="prevMovie()"></button>
+  <div class="movie__info">
+    <h1 class="movie__info--title">{{ movie?.title }}</h1>
+    <p class="movie__info--overview">
+      {{ movie?.overview }}
+    </p>
+
+    <section>
+      <div>
+        <span class="movie__info--rating">Rating:</span>
+        <span> {{ movie?.vote_average }} IMDB</span>
+      </div>
+      <div>
+        <span class="movie__info--voteCount"> Votes Counted: </span>
+        <span> {{ movie?.vote_count }}</span>
+      </div>
+    </section>
+  </div>
+  <img
+    class="movie__info--img"
+    [src]="'https://image.tmdb.org/t/p/w500' + movie?.poster_path"
+  />
+  <button class="nextBtn" (click)="nextMovie()"></button>
+</div>

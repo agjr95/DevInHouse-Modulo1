@@ -18,6 +18,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 //services
 import { GetApiMovieDataService } from './services/getApiMovieData/get-api-movie-data.service';
+import { Ex10Top3Component } from './ex10-top3/ex10-top3.component';
 
 
 
@@ -38,6 +39,7 @@ import { GetApiMovieDataService } from './services/getApiMovieData/get-api-movie
     Ex8LoadingComponent,
     LoadingComponent,
     Ex9PopularComponent,
+    Ex10Top3Component,
   
    
   ],

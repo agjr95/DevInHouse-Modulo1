@@ -9,6 +9,7 @@ import { Ex6APIComponent } from './ex6-api/ex6-api.component';
 import { Ex7ApiServiceComponent } from './ex7-api-service/ex7-api-service.component';
 import { Ex8LoadingComponent } from './ex8-loading/ex8-loading.component';
 import { Ex9PopularComponent } from './ex9-popular/ex9-popular.component';
+import { Ex10Top3Component } from './ex10-top3/ex10-top3.component';
 const routes: Routes = [
   {
     path:'',
@@ -52,6 +53,11 @@ const routes: Routes = [
   {
     path:'ex9',
     component:Ex9PopularComponent
+
+  },
+  {
+    path:'ex10',
+    component:Ex10Top3Component
 
   }
   
