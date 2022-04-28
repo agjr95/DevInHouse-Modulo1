@@ -19,6 +19,7 @@ import {HttpClientModule} from '@angular/common/http';
 //services
 import { GetApiMovieDataService } from './services/getApiMovieData/get-api-movie-data.service';
 import { Ex10Top3Component } from './ex10-top3/ex10-top3.component';
+import { ViewComponent } from './view/view.component';
 
 
 
@@ -40,6 +41,7 @@ import { Ex10Top3Component } from './ex10-top3/ex10-top3.component';
     LoadingComponent,
     Ex9PopularComponent,
     Ex10Top3Component,
+    ViewComponent,
   
    
   ],

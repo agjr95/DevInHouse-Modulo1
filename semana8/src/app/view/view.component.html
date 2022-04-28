@@ -1,0 +1,126 @@
+<div
+  id="carouselExampleIndicators"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- filme 1 -->
+      <div class="container">
+        <div class="movie__info">
+          <h1 class="movie__info--title">{{ top3[0]?.title }}</h1>
+          <p class="movie__info--overview">
+            {{ top3[0]?.overview }}
+          </p>
+
+          <section>
+            <div>
+              <span class="movie__info--rating">Rating:</span>
+              <span> {{ top3[0]?.vote_average }} IMDB</span>
+            </div>
+            <div>
+              <span class="movie__info--voteCount"> Votes Counted: </span>
+              <span> {{ top3[0]?.vote_count }}</span>
+            </div>
+          </section>
+        </div>
+        <img
+          [src]="'https://image.tmdb.org/t/p/w500' + top3[0]?.poster_path"
+          alt="..."
+        />
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!-- filme 2 -->
+      <div class="container">
+        <div class="movie__info">
+          <h1 class="movie__info--title">{{ top3[1]?.title }}</h1>
+          <p class="movie__info--overview">
+            {{ top3[1]?.overview }}
+          </p>
+
+          <section>
+            <div>
+              <span class="movie__info--rating">Rating:</span>
+              <span> {{ top3[1]?.vote_average }} IMDB</span>
+            </div>
+            <div>
+              <span class="movie__info--voteCount"> Votes Counted: </span>
+              <span> {{ top3[1]?.vote_count }}</span>
+            </div>
+          </section>
+        </div>
+        <img
+          [src]="'https://image.tmdb.org/t/p/w500' + top3[1]?.poster_path"
+          alt="..."
+        />
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!-- filme 3 -->
+      <div class="container">
+        <div class="movie__info">
+          <h1 class="movie__info--title">{{ top3[2]?.title }}</h1>
+          <p class="movie__info--overview">
+            {{ top3[2]?.overview }}
+          </p>
+
+          <section>
+            <div>
+              <span class="movie__info--rating">Rating:</span>
+              <span> {{ top3[2]?.vote_average }} IMDB</span>
+            </div>
+            <div>
+              <span class="movie__info--voteCount"> Votes Counted: </span>
+              <span> {{ top3[2]?.vote_count }}</span>
+            </div>
+          </section>
+        </div>
+        <img
+          [src]="'https://image.tmdb.org/t/p/w500' + top3[2]?.poster_path"
+          alt="..."
+        />
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
