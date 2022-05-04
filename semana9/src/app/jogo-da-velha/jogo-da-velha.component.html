@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="main">
+    <h1>Jogo da Velha</h1>
+    <p>É a vez do jogador: {{ jogadorAtual }}</p>
+    <p>Tempo Restante: {{ segundos }} segundos</p>
+  </div>
+  <div class="gameOver" *ngIf="gameOver">
+    <p>Game Over!!</p>
+    <p>{{ mensagem }}</p>
+  </div>
+  <div class="rodadaVencida" *ngIf="rodadaVencida">
+    <p>Vencedor da rodada é:</p>
+    <p>{{ vencedor }}</p>
+    <div
+      [ngClass]="{
+        vencedorRebel: vencedor === 'Aliança Rebelde',
+        vencedorImperial: vencedor === 'Império Galático'
+      }"
+    ></div>
+  </div>
+  <div class="tabuleiro">
+    <table class="table align-middle table-bordered">
+      <tbody>
+        <tr *ngFor="let linhas of [0, 1, 2]">
+          <td
+            *ngFor="let colunas of [0, 1, 2]"
+            (click)="jogada(linhas, colunas)"
+            [ngClass]="{
+              imperial: tabuleiro[linhas][colunas] === 'Império Galático',
+              rebel: tabuleiro[linhas][colunas] === 'Aliança Rebelde'
+            }"
+          >
+            {{ tabuleiro[linhas][colunas] }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button (click)="reiniciar()" mat-raised-button>Novo Jogo</button>
+  </div>
+</div>

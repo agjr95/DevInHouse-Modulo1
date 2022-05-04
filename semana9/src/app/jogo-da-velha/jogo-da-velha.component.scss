@@ -1,0 +1,98 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+ margin-top: 2rem;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  color: #f1f1f1;
+  h1{
+    font-size: 4rem;
+    margin-bottom: 4rem ;
+    text-align: center;
+  }
+}
+
+tr,td{
+  border: 2px solid #7a7a7a;
+}
+
+table{
+  max-width: 26.25rem;
+  height: 26.25rem;
+  
+}
+td{
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  font-size: 2rem;
+  content-visibility: hidden;
+
+}
+.tabuleiro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  border:1px solid  #a8a6a6;
+  width: 500px;
+  height: 600px;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  color: #f1f1f1;
+}
+.rebel{
+ 
+  background-color: blue;
+  mask-image: url(../../assets/images/rebel-brands.svg);
+  mask-size: 50%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+.imperial{
+  background-color: red;
+  mask-image: url(../../assets/images/empire-brands.svg);
+  mask-size: 50%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+}
+.vencedorRebel{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: blue;
+  mask-image: url(../../assets/images/rebel-brands.svg);
+  mask-size: 50%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+.vencedorImperial{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: red;
+  mask-image: url(../../assets/images/empire-brands.svg);
+  mask-size: 50%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+.gameOver,.rodadaVencida{
+  position: fixed;
+  top: 25%;
+  // left: 30%;
+  // transform: translate(-50%,-70%);
+  z-index: 1;
+  width: 500px;
+  height: auto;
+  text-align: center;
+  background-color:#f1f1f1 ;
+  border-radius: 0.8rem;
+  padding: 2rem;
+}
+  
