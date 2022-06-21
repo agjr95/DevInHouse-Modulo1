@@ -1,0 +1,11 @@
+<div class="container">
+  <mat-card class="card" *ngFor="let character of characters.slice(0, 5)">
+    <img class="card__image" mat-card-image src="{{ character.avatar }}" />
+    <mat-card-title class="card__title">{{ character.nome }}</mat-card-title>
+    <mat-card-content class="card__info">
+      <p><span>Habilidade:</span> {{ character.habilidade }}</p>
+      <p><span>Planeta:</span> {{ character.planeta }}</p>
+      <p><span>Arma:</span> {{ character.armas }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
