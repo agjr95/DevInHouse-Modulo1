@@ -8,15 +8,16 @@ import { AtoresComponent } from './view/atores/atores.component';
 import { BuscaComponent } from './busca/busca.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { InformarEmailComponent } from './components/informar-email/informar-email.component';
+import { Page404Component } from './view/page404/page404.component';
 const routes: Routes = [
   {
-    path:'',
-    redirectTo:'email',
-    pathMatch:'full'
+    path: '',
+    redirectTo: 'email',
+    pathMatch: 'full',
   },
   {
-    path:'home',
-    component:HomeComponent,
+    path: 'home',
+    component: HomeComponent,
     // canLoad:[
     //   AuthGuard
     // ],
@@ -25,25 +26,29 @@ const routes: Routes = [
     // ]
   },
   {
-    path:'serie',
-    component:SerieComponent
+    path: 'serie',
+    component: SerieComponent,
   },
   {
-    path:'atores',
-    component:AtoresComponent
+    path: 'atores',
+    component: AtoresComponent,
   },
   {
-    path:'busca',
-    component:BuscaComponent
+    path: 'busca',
+    component: BuscaComponent,
   },
   {
-    path:'email',
-    component:InformarEmailComponent
-  }
+    path: 'email',
+    component: InformarEmailComponent,
+  },
+  {
+    path: '**',
+    component: Page404Component,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

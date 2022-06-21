@@ -13,6 +13,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { FullComponent } from './layout/full/full.component';
 import { ContentComponent } from './layout/content/content.component';
 import { InformarEmailComponent } from './components/informar-email/informar-email.component';
+import { Page404Component } from './view/page404/page404.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { InformarEmailComponent } from './components/informar-email/informar-ema
     FullComponent,
     ContentComponent,
     InformarEmailComponent,
+    Page404Component,
     
     
   ],
