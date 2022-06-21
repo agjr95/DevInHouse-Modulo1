@@ -20,6 +20,9 @@ import {HttpClientModule} from '@angular/common/http';
 import { GetApiMovieDataService } from './services/getApiMovieData/get-api-movie-data.service';
 import { Ex10Top3Component } from './ex10-top3/ex10-top3.component';
 import { ViewComponent } from './view/view.component';
+import { FormularioComponent } from './formulario/formulario.component';
+import { BaseComponent } from './layouts/base/base.component';
+import { CompleteComponent } from './layouts/complete/complete.component';
 
 
 
@@ -42,6 +45,9 @@ import { ViewComponent } from './view/view.component';
     Ex9PopularComponent,
     Ex10Top3Component,
     ViewComponent,
+    FormularioComponent,
+    BaseComponent,
+    CompleteComponent,
   
    
   ],

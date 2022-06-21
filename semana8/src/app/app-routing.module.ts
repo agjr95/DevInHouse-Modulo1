@@ -11,6 +11,7 @@ import { Ex8LoadingComponent } from './ex8-loading/ex8-loading.component';
 import { Ex9PopularComponent } from './ex9-popular/ex9-popular.component';
 import { Ex10Top3Component } from './ex10-top3/ex10-top3.component';
 import { ViewComponent } from './view/view.component';
+import { FormularioComponent } from './formulario/formulario.component';
 const routes: Routes = [
   {
     path:'',
@@ -64,6 +65,10 @@ const routes: Routes = [
   {
     path:'page',
     component:ViewComponent
+  },
+  {
+    path:'formulario',
+    component:FormularioComponent
   }
   
 
