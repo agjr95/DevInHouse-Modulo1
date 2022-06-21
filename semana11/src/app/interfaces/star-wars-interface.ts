@@ -1,8 +1,8 @@
 export interface StarWarsInterface {
   id: number;
-  nome: string;
-  habilidade: string;
-  planeta: string;
-  armas: string;
+  name: string;
+  skill: string;
+  planet: string;
+  weapon: string;
   avatar: string;
 }
